@@ -453,3 +453,129 @@ footer{
   opacity:1;
   transform:translateY(0);
 }
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+.menu-toggle{
+  display:none;
+  font-size:1.8rem;
+  cursor:pointer;
+  color:white;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+
+  nav{
+    padding:20px 40px;
+  }
+
+  .section{
+    padding:100px 40px;
+  }
+
+  .grid{
+    gap:30px;
+  }
+
+  .hero-title{
+    font-size:3rem;
+  }
+
+  .numbers{
+    gap:40px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  /* Navbar */
+  .menu-toggle{
+    display:block;
+  }
+
+  nav ul{
+    position:absolute;
+    top:80px;
+    right:0;
+    background:#111;
+    flex-direction:column;
+    width:250px;
+    padding:20px;
+    display:none;
+    border-left:2px solid gold;
+  }
+
+  nav ul.active{
+    display:flex;
+  }
+
+  nav ul li{
+    margin:15px 0;
+  }
+
+  /* Hero */
+  .hero-title{
+    font-size:2.2rem;
+  }
+
+  #typing{
+    font-size:1rem;
+  }
+
+  /* Sections */
+  .section{
+    padding:80px 20px;
+  }
+
+  .essence-text{
+    font-size:1rem;
+  }
+
+  .essence-card{
+    width:100%;
+  }
+
+  /* Cards */
+  .card-image{
+    height:220px;
+  }
+
+  /* Stats */
+  .numbers{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  /* Footer */
+  footer{
+    padding:40px 20px;
+  }
+
+  .footer-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+  .hero-title{
+    font-size:1.8rem;
+  }
+
+  .card-body h3{
+    font-size:1.1rem;
+  }
+
+  .card-image{
+    height:180px;
+  }
+
+}
